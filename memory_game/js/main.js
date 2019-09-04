@@ -45,7 +45,7 @@ let createBoard = function (){
 };
 
 
-//check if two cards match and reset board
+//check if two cards match 
 function checkForMatch(){
 	if (cardsInPlay[0]===cardsInPlay[1]){
 		score += 1;
@@ -73,7 +73,7 @@ function flipCard(){
 	};
 		
 };
-
+//flipcards back over and empty the cardsInPlay array so user can try again.
 function resetBoard(){
 	let cardList = document.getElementById('game-board').childNodes; 
 	console.log(cardList);
